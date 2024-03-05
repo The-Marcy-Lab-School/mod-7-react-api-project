@@ -1,46 +1,58 @@
 # React and 3rd Party API Project
 
-- [React and 3rd Party API Project](#react-and-3rd-party-api-project)
 - [Welcome!](#welcome)
 - [Overview](#overview)
   - [APIs and Keys](#apis-and-keys)
   - [Deployment](#deployment)
 - [Timeline](#timeline)
+- [Agile Written Reflection](#agile-written-reflection)
 - [Tech Checklist](#tech-checklist)
   - [Project Fundamentals](#project-fundamentals)
-  - [React Fundamentals](#react-fundamentals)
-  - [Advanced React](#advanced-react)
-  - [Style](#style)
-  - [A11y](#a11y)
+- [React Fundamentals](#react-fundamentals)
+- [Advanced React](#advanced-react)
+- [Style](#style)
+- [A11y](#a11y)
 
-# Welcome!
+## Welcome!
 Hello everyone, it's been a whirlwind, but believe it or not you know more than enough to get your React project started! You've already built projects just like this one using Vanilla JS, the whole idea behind this one is that you'll see how much faster and farther you can build when you use a tool like React.
 
-# Overview
+## Overview
 Your app will have to use a third party API to fetch data, but instead of only 2 fetches, you'll have to make 3! And unlike your previous projects that all took place behind the same url, this time you're going to use client side routing! And while it may not be everywhere, use must use context at least *once* in your app. Also, even if it feels contrived we would like to see at least 2 forms on your site. One controlled and one uncontrolled. We fully understand that *may* be clunky, we just want to see if you can do it.
 
 There are of course more specifics below in the check list, but at its heart, all we're asking for is an app that makes 3 fetches, made with React, and uses client side routing and also context.
 
-## APIs and Keys
+### APIs and Keys
 Once again, this is not about APIs, so please use a free API and one without keys. **WE STILL WILL NOT ALLOW YOU TO POST PRIVATE API KEYS IN A PUBLIC GITHUB REPO.**
 
 But that doesn't *technically* mean you can't use API keys. If you are absolutely dead set on using a specific API, you know enough to use them *properly* now, it will just require something called a "Proxy Server." You can build one with Express!
 
 Now, is that more complicated? Yes! But if you're up to the challenge, it would be a great opportunity to play around with everything. Just don't get distracted, we're not giving *any* notice to this proxy behavior, we are solely looking at your React skills.
 
-## Deployment
+### Deployment
 Because we're using client side routing deployment may be a little trickier than usual.  We'd like you to deploy this project, so it's up to you to research the various ways to get your app out there.
 
-# Timeline
+## Timeline
 This one is up to you! But here's the catch: we'll hold you to it. You've done a bunch of these projects by now, so you should know about how much work you can get done in a week. You know what we're expecting you to get done by the end (3 fetches, multi-page routing, React), so you can work backwards from there.
 
 **Before you start your project, you'll have to submit the deadlines you think you can hit**. Don't go crazy! This exercise is about setting *realistic deadlines for your team*. It's always better to under promise and over deliver. Now, that being said, your timeline has to be approved (you can just do it all in one night), so really think about what you'll do.
 
 Make sure you look over the entire project and think about what will take you time
 
-# Tech Checklist
+## Agile Written Reflection
 
-## Project Fundamentals
+In addition to the technical component of this project, your team will write a short reflection on your week (~250 words) thinking critically about how you and your team practiced the Agile methodology:
+
+* Reflect on your team's communication processes. How did Agile practices, such as **daily stand-up** meetings, facilitate communication and collaboration among team members?
+* How did maintaining a **scrum board** play a role in the development of your project?
+* Reflect on your team's prioritization of tasks. How did your team decide on the **MVP** features and how did this prioritization assist in accomplishing your goals?
+
+For each of these questions, consider providing a specific example to support your narrative.
+
+**Only one reflection per group is required**.
+
+## Tech Checklist
+
+### Project Fundamentals
 - [ ] Used Vite for this project
 - [ ] Used React
 - [ ] Used React Router for client side routing
