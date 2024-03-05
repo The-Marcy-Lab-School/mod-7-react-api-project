@@ -8,10 +8,10 @@
 - [Agile Written Reflection](#agile-written-reflection)
 - [Tech Checklist](#tech-checklist)
   - [Project Fundamentals](#project-fundamentals)
-- [React Fundamentals](#react-fundamentals)
-- [Advanced React](#advanced-react)
-- [Style](#style)
-- [A11y](#a11y)
+  - [React Fundamentals](#react-fundamentals)
+  - [Advanced React](#advanced-react)
+  - [Style](#style)
+  - [A11y](#a11y)
 
 ## Welcome!
 Hello everyone, it's been a whirlwind, but believe it or not you know more than enough to get your React project started! You've already built projects just like this one using Vanilla JS, the whole idea behind this one is that you'll see how much faster and farther you can build when you use a tool like React.
@@ -63,7 +63,7 @@ For each of these questions, consider providing a specific example to support yo
 - [ ] **Were able to get it deployed in a functional state**
 
 
-## React Fundamentals
+### React Fundamentals
 - [ ] Created at least 3 components
 - [ ] Have all components in their own files (1 export per file)
 - [ ] Passed props to a component at least 3 times
@@ -80,7 +80,7 @@ For each of these questions, consider providing a specific example to support yo
 - [ ] At no point did you ever use any vanilla DOM JS methods
 - [ ] Rendered an array of items to the screen at least once
 
-## Advanced React
+### Advanced React
 - [ ] Used the useContext hook at least once
 - [ ] Had at least 2 different pages in the application
 - [ ] Used the proper `Link` components to navigate between pages
@@ -90,7 +90,7 @@ For each of these questions, consider providing a specific example to support yo
 - [ ] Lifted state up out of a component at least once
   - That is a fancy way of saying that you had the state of a component and then passed down the getter and setter functions for the hook to a child component. You've seen us do this!
 
-## Style
+### Style
 - [ ] Used Flexbox or Grid to style list of components
 - [ ] Navigation bar fits cleanly on mobile and desktop
 - [ ] Site has a primary color
@@ -104,7 +104,7 @@ For each of these questions, consider providing a specific example to support yo
 - [ ] Navigation visually indicates what page you are on
   - Think underlines, bolding, etc. this should change as you move around the site
 
-## A11y
+### A11y
 - [ ] There is a `main` element on *each* page
 - [ ] There is a `nav` element on *each* page
 - [ ] The `nav` contains a `ul` of links
