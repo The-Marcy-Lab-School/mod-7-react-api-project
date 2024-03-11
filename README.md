@@ -60,6 +60,7 @@ As a reminder, check out this resource for [deploying a Vite project to Github p
 
 As a part of your proposal, you will need to submit a document that includes the following:
   * A mission statement for the app (who its for, what it does, and why they would use it)
+  * The API and specific endpoints you plan on using
   * MVP user stories (users can...)
   * Stretch user stories
   * Timeline for reaching MVP in 1 week
