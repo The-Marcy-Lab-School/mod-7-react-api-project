@@ -6,6 +6,20 @@ Created by [team member], [team member], and [team member].
 
 Our application, [app name] is for [target audience]. It allows users to [what it does and why audience would use it]
 
+## API
+
+This application will use the [name of API] API. Below are the documentation and specific endpoints we intend to use.
+
+- Link to API documentation: [Link goes here]
+- [API endpoint #1]
+  - [List of data values used by the endpoint]
+- [API endpoint #2]
+  - [List of data values used by the endpoint]
+- [API endpoint #3]
+  - [List of data values used by the endpoint]
+
+[If your API requires an API key, say so here.]
+
 ## 👩‍💻 MVP User Stories
 
 The core features of the application include:
