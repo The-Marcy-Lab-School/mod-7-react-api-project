@@ -74,7 +74,7 @@ This one is up to you! But here's the catch: we'll hold you to it. You've done a
 
 **Before you start your project, you'll have to submit the deadlines you think you can hit and get it approved**. Don't go crazy! This exercise is about setting *realistic deadlines for your team*. 
 
-> **💡 Pro Tip:** It's always better to <u>under-promise and ove- deliver</u>.
+> **💡 Pro Tip:** It's always better to <u>under-promise and over-deliver</u>.
 
 Make sure you look over the entire project and think about what will take the most time.
 
