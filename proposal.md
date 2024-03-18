@@ -66,6 +66,9 @@ To ensure that we can complete all core features of the application in 1 week, w
 
 Below, you can find wireframes for our project. Each wireframe shows a different page of our application as well as the key components of the application. Details such as specific text values or images are intentionally not included:
 
+![home page](img/wireframe-all-jobs.png)
+![individual job route](img/wireframe-individual-job.png)
+
 
 
 
