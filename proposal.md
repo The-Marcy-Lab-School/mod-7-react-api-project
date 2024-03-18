@@ -4,11 +4,11 @@ Created by Roe Cox and Elijah Hawes.
 
 ## 🚀 Mission statement
 
-Our application, YouNews is for those seeking a news source. It allows users to [what it does and why audience would use it]
+Our application, YouNews, is designed for users seeking a personalized news source. It allows users keep up with popular news stories, while also letting them browse articles based on topics relevant to the user.
 
 ## API
 
-This application will use the [name of API] API. Below are the documentation and specific endpoints we intend to use.
+This application will use the New York Times API. Below are the documentation and specific endpoints we intend to use.
 
 - Link to API documentation: [\[New York Times API\]](https://developer.nytimes.com/apis)
 - [Most Viewed Article in Last Week](https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=yourkey)
