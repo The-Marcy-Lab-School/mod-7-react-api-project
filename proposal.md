@@ -10,9 +10,9 @@ Our application, YouNews, is designed for users seeking a personalized news sour
 
 This application will use the New York Times API. Below are the documentation and specific endpoints we intend to use.
 
-- Link to API documentation: [\[New York Times API\]](https://developer.nytimes.com/apis)
-- [Most Viewed Article in Last Week](https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=yourkey)
-  - [List of data values used by the endpoint]
+- Link to API documentation: [New York Times API](https://developer.nytimes.com/apis)
+- [Most Viewed Articles in Last 7 Days](https://api.nytimes.com/svc/mostpopular/v2/viewed/7.json?api-key=BzrIgxaSecJBuUXeSAMRvrsAes0xrlrU )
+  - `url`, `title`, `abstract`, `media-metadata`
 - [Article Search](/articlesearch.json?q={query}&fq={filter})
   - [List of data values used by the endpoint]
 - [Filter articles by tag](http://api.nytimes.com/svc/semantic/v2/concept)
