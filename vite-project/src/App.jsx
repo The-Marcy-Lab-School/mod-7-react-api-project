@@ -1,35 +1,56 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+
 function App() {
-  const [count, setCount] = useState(0)
+  const API_ID = "5d72eebc";
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res = await fetch(`https://api.edamam.com/api/meal-planner/v1/${API_ID}/select`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Edamam-Account-User': 'domtuz1'
+          },
+          body: JSON.stringify({
+            "plan": {
+              "accept": {
+                "all": [
+                  {
+                    "health": [
+                      "SOY_FREE",
+                      "FISH_FREE",
+                      "MEDITERRANEAN"
+                    ]
+                  }
+                ]
+              }
+            }
+          })
+        });
+
+        if (!res.ok) {
+          throw new Error(`HTTP error! Status: ${res.status}`);
+        }
+
+        const data = await res.json();
+        console.log('Meal plan data:', data);
+      } catch (error) {
+        console.error('Error:', error.message);
+        // Handle errors gracefully
+      }
+    };
+
+    fetchData();
+  }, []); // Empty dependency array to run only once on component mount
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <h1>hello</h1>
+  );
 }
 
-export default App
+export default App;
