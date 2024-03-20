@@ -19,7 +19,7 @@ This application will use the New York Times API. Below are the documentation an
 - [Filter articles by tag](http://api.nytimes.com/svc/semantic/v2/concept)
   - [List of data values used by the endpoint]
 
-New York Times API requires a key.
+
 
 **Example:**
 - https://api.artic.edu/api/v1/artworks
