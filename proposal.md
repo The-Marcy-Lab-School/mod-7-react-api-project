@@ -6,7 +6,8 @@ Created by Roe Cox and Elijah Hawes.
 
 Our application, YouNews, is designed for users seeking a personalized news source. It allows users keep up with popular news stories, while also letting them browse articles based on topics relevant to the user.
 
-## API
+## API & React Router
+
 
 This application will use the New York Times API. Below are the documentation and specific endpoints we intend to use.
 
@@ -20,9 +21,19 @@ This application will use the New York Times API. Below are the documentation an
 
 New York Times API requires a key.
 
-## 👩‍💻 MVP User Stories
+**Example:**
+- https://api.artic.edu/api/v1/artworks
+  - This will fetch an array of artwork objects
+  - For each artwork, I want the `id`, `title`, and `image_id`
+- https://api.artic.edu/api/v1/artworks/{id}
+  - This will fetch a single artwork object
+  - I will use the `id`, `title`, `short_description`, `medium_display`, `place_of_origin` and `image_id`
+- https://api.artic.edu/api/v1/artworks/search?q={query}
+  - This will fetch a list of artworks that relate to the search query
+  - For each artwork, I will use the `id` and `title`
 
-The core features of the application include:
+## 👩‍💻 MVP User Stories & Frontend Routes
+
 
 * Users can see the most viewed stories of the last 7 days
 * Users can search for articles by keyword
@@ -35,6 +46,10 @@ If time permits, the following stretch features will be implemented in order of 
 * Users will be able to view articles related to Gaza on a timeline 
 * Users will be able to change to dark mode or light mode 
 * Users will be able to bookmark articles
+
+**Example:**
+* Users will be able to save and view favorited artworks using local storage
+* Users will be able to change the color scheme of the website from light mode to dark mode
 
 ## 📆 Timeline for reaching MVP in 1 week
 
@@ -74,3 +89,4 @@ Below, you can find wireframes for our project. Each wireframe shows a different
 ![Wireframe 2](wireframes/73242119921__592DC8FD-AFDA-45B2-B847-D5471678203C.jpg)
 
 ![Wireframe 3](wireframes/73242130449__5B2C622D-F405-4F8C-BF44-21BB1BCDB1EB.jpg)
+
