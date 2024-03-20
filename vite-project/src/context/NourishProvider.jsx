@@ -1,11 +1,12 @@
+import NourishContext from "./NourishContext";
 
- const URL = "https://api.edamam.com/api/recipes/v2";
+const NourishProvider = ({ children }) => {
 
-useEffect(() => {
-    const doFetch = async () => {
-        const [data] = await handleFetch('http://localhost:4000/robots');
-        if (data) setRobots(data);
-      
-    }
-    doFetch();
-}, [])
+    return (
+        <NourishContext > 
+            { children }
+        </NourishContext > 
+    )
+}
+
+export default NourishProvider
