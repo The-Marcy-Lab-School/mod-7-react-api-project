@@ -8,7 +8,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch(`https://api.edamam.com/api/recipes/v2/?type=public&app_id=${API_ID}&app_key=%20${API_KEY}`);
+        const res = await fetch(`https://api.edamam.com/api/recipes/v2/?type=public&app_id=${API_ID}&app_key=%20${API_KEY}&diet=balanced`);
 
         if (!res.ok) {
           throw new Error(`HTTP error! Status: ${res.status}`);
