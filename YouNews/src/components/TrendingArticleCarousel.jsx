@@ -27,15 +27,17 @@ const TrendingArticleCarousel = () => {
 
   return (
     <center>
-    <Carousel style={{width : '50rem'}}>{
+    <Carousel style={{width : '80rem'}}>{
       trendingArticles?.filter((article, index) => trendingArticles.indexOf(article) !== 10)
       .map((article, index) => (
   
           <Carousel.Item >
-          <img src={article.media?.[0]?.['media-metadata']?.[2]?.url ?? ''} style={{width : '50rem', height: '30rem'}}/>
-          <Carousel.Caption>
-            <h3>{article.title}</h3>
+          <img src={article.media?.[0]?.['media-metadata']?.[2]?.url ?? ''} style={{width : '65rem', height: '40rem'}}/>
+          <Carousel.Caption >
+            <div >
+              <h3>{article.title}</h3>
             <p>{article.abstract}</p>
+            </div> 
           </Carousel.Caption>
         </Carousel.Item>
 
