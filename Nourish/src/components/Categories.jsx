@@ -1,34 +1,32 @@
-import NourishContext from "../context/NourishContext";
+import { handleFetch } from '../utils';
 import { useState, useEffect } from 'react';
+import { useParams } from "react-router-dom";
 
-const API = 'https://www.themealdb.com/api/json/v1/1/categories.php';
+
+const API = 'https://www.themealdb.com/api/json/v1/1/filter.php?c=';
 
 const Categories = () => {
 
-    const [category, setCategory] = useState([])
-
-    
-    
-
-    const handleClick = (e) => {
-
-    }
-}
+    const { CategoryName } = useParams()
+    const [meals, setMeals] = useState([])
 
     useEffect(() => {
-        const fetchData = async () => {
-          const [data, error] = await handleFetch(API)
+        const fetchMeals = async () => {
+          const [data, error] = await handleFetch(API + CategoryName)
           if (data) setData(data)
           if (error) setError(error.message)
         }
-      fetchData();
-      }, []);
+      fetchMeals();
+      }, [CategoryName]);
 
     return (
         <div>
-            <select name="catergories" id="catergories">
-            
-            </select>
+           <h2>Meals in {CategoryName}</h2>
+            <ul>
+                {meals.map((meal, index) => (
+                    <li key={index}>{meal.strMeal}</li>
+                ))}
+            </ul>
         </div>
     )
 }
