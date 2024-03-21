@@ -12,7 +12,7 @@ function App () {
 
   return (
     <>
-    //*routes
+
       <Routes>
         <Route path='/' element={<HomePage />} />
        
