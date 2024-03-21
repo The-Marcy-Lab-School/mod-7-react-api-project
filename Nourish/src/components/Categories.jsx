@@ -7,10 +7,6 @@ const Categories = () => {
 
     const [category, setCategory] = useState([])
 
-    const handleClick = (e) => {
-
-    }
-
     useEffect(() => {
         const fetchData = async () => {
           const [data, error] = await handleFetch(API)
