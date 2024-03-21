@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import './NavBar.css';
+import styles from './NavBar.module.css';
 
 const Navbar = () => {
     const [isActive, setIsActive] = useState(false);
@@ -17,7 +17,7 @@ const Navbar = () => {
         <header className="App-header">
           <nav className={`${styles.navbar}`}>
             {/* logo */}
-            <a href='#home' className={`${styles.logo}`}>Dev. </a>
+            <a href='#home' className={`${styles.logo}`}>Nourish </a>
             <ul className={`${styles.navMenu} ${isActive ? styles.active : ''}`}>
               <li onClick={removeActive}>
                 <a href='#home' className={`${styles.navLink}`}>Home</a>
