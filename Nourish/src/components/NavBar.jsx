@@ -29,13 +29,15 @@ const NavBar = () => {
                     <div className="dropdown">
                         <span>Categories</span>
                         <div className="dropdown-content">
-                            {categories.length > 0 && categories.map((category, index) => (
-                                <li key={index}>
-                                    <Link to={`/category/${category.strCategory}`}>
-                                        {category.strCategory}
-                                    </Link>
-                                </li>
-                            ))}
+                            {
+                                categories.length > 0 && categories.map((category) => (
+                                    <li key={category.idCategory}>
+                                        <Link to={`/category/${category.idCategory}`}>
+                                            {category.strCategory}
+                                        </Link>
+                                    </li>
+                                ))
+                            }
                         </div>
                     </div>
                 <li>

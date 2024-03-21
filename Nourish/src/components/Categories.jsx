@@ -2,7 +2,6 @@ import { handleFetch } from '../utils';
 import { useState, useEffect } from 'react';
 import { useParams } from "react-router-dom";
 
-
 const API = 'https://www.themealdb.com/api/json/v1/1/filter.php?c=';
 
 const Categories = () => {
