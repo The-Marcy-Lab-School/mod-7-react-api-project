@@ -1,3 +1,5 @@
-import { createContext } from "react";
-const nourishContext = createContext();
-export default nourishContext;
+import { createContext } from 'react';
+
+const NourishContext = createContext();
+
+export default NourishContext;
