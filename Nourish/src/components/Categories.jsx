@@ -8,7 +8,7 @@ const API = 'https://www.themealdb.com/api/json/v1/1/filter.php?c=';
 const Categories = () => {
 
     const { CategoryName } = useParams()
-    const [meals, setMeals] = useState([])
+    const [ meals, setMeals ] = useState([])
 
     useEffect(() => {
         const fetchMeals = async () => {

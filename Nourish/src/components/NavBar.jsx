@@ -2,8 +2,6 @@ import { useState,useEffect } from "react";
 import { Link } from "react-router-dom";
 import { handleFetch } from "../utils";
 
-
-
 const API = 'https://www.themealdb.com/api/json/v1/1/categories.php';
 
 const NavBar = () => {
