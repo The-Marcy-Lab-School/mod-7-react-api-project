@@ -13,7 +13,7 @@ const Categories = () => {
     useEffect(() => {
         const fetchMeals = async () => {
           const [data, error] = await handleFetch(API + CategoryName)
-          if (data) setData(data)
+          if (data) setMeals(data)
           if (error) setError(error.message)
         }
       fetchMeals();
