@@ -3,9 +3,9 @@ import { useState, useEffect } from 'react';
 
 const API = 'https://www.themealdb.com/api/json/v1/1/categories.php';
 
-const Catergories = () => {
+const Categories = () => {
 
-    const [catergory, setCatergory] = useState([])
+    const [category, setCategory] = useState([])
 
     const handleClick = (e) => {
 
@@ -29,4 +29,4 @@ const Catergories = () => {
     )
 }
 
-export default Catergories
+export default Categories

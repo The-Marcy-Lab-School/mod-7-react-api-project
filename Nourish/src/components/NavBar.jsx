@@ -1,4 +1,4 @@
-import Catergories from "./Catergories"
+import Categories from "./Categories"
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -10,7 +10,7 @@ const NavBar = () => {
                     <Link to='/'>Home</Link>
                 </li>
                 <li>
-                    <Link to='/catergories'>Catergories</Link>
+                    <Link to='/categories'>Categories</Link>
                 </li>
                 <li>
                     <Link to='/allmeals'>All Meals</Link>
