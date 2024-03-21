@@ -9,7 +9,7 @@ const NourishProvider = ({children}) => {
 
 useEffect(() => {
     const fetchData = async () => {
-      const [data, error] = await handleFetch(``)
+      const [data, error] = await handleFetch(`https://www.themealdb.com/api/json/v1/1/categories.php`)
       if (data) setData(data)
       if (error) setError(error.message)
     }
