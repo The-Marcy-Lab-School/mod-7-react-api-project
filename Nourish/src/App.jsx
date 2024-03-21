@@ -15,7 +15,7 @@ function App () {
     //*routes
       <Routes>
         <Route path='/' element={<HomePage />} />
-       
+      
         <Route path="*" element={<div>page not found</div>} />
       </Routes>
     </>
