@@ -4,12 +4,15 @@ import { useState, useEffect } from 'react';
 const API = 'https://www.themealdb.com/api/json/v1/1/categories.php';
 
 const Catergories = () => {
-
     const [catergory, setCatergory] = useState([])
+
+    
+    
 
     const handleClick = (e) => {
 
     }
+}
 
     useEffect(() => {
         const fetchData = async () => {
