@@ -10,21 +10,11 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      try {
-        const res = await fetch(`https://api.edamam.com/api/recipes/v2/?type=public&app_id=${API_ID}&app_key=%20${API_KEY}`);
-
-        if (!res.ok) {
-          throw new Error(`HTTP error! Status: ${res.status}`);
-        }
-        const data = await res.json();
-        console.log('Recipe Data:', data);
-      } catch (error) {
-        console.error('Error:', error.message);
-        // Handle errors gracefully
-      }
-    };
-
-    fetchData();
+      const [data, error] = await handleFetch(`https://api.edamam.com/api/recipes/v2/?type=public&app_id=${API_ID}&app_key=%20${API_KEY}`)
+      if (data) setData(data)
+      if (error) setError(error.message)
+    }
+  fetchData();
   }, []); // Empty dependency array to run only once on component mount
 
   return (
@@ -38,5 +28,3 @@ function App() {
 }
 
 export default App;
-
-
