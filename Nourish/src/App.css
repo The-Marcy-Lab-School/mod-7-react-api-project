@@ -5,6 +5,52 @@
   text-align: center;
 }
 
+.card {
+  /* Add shadows to create the "card" effect */
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin-right: 20px; /* Add margin between cards */
+  width: calc(25% - 20px); /* Set the width of each card to fit four cards in a row with margins */
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.card-body {
+  padding: 10px; /* Increase padding for better spacing */
+}
+
+img {
+  width: 100%; /* Make the image responsive */
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 1200px) {
+  .card {
+    width: calc(33.33% - 20px); /* Set the width of each card to fit three cards in a row with margins */
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: calc(50% - 20px); /* Set the width of each card to fit two cards in a row with margins */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 100%; /* Set the width of each card to fit one card in a row */
+    margin-right: 0; /* Remove margin for the last card in a row */
+    margin-bottom: 20px; /* Add margin between rows */
+  }
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
