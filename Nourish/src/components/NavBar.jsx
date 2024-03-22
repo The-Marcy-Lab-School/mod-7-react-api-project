@@ -1,24 +1,10 @@
-import { useState,useEffect } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { handleFetch } from "../utils";
-
-const API = 'https://www.themealdb.com/api/json/v1/1/categories.php';
+import NourishContext from "../context/NourishContext";
 
 const NavBar = () => {
-    // const categoryFetch =  fetch categories
-    const [categories, setCategory] = useState([])
-    const [error, setError] = useState(null)
 
-    useEffect(() => {
-        const fetchCategories = async () => {
-        const [data, error] = await handleFetch(API)
-          if (data) setCategory(data.categories)
-          if (error) setError(error.message)
-        }
-      fetchCategories();
-      }, []);
-
-      console.log(categories)
+    const { categories } = useContext(NourishContext);
 
     return (
         <nav>
@@ -30,7 +16,7 @@ const NavBar = () => {
                         <span>Categories</span>
                         <div className="dropdown-content">
                             {
-                                categories.length > 0 && categories.map((category) => (
+                                categories && categories.length > 0 && categories.map((category) => (
                                     <li key={category.idCategory}>
                                         <Link to={`/category/${category.idCategory}`}>
                                             {category.strCategory}
