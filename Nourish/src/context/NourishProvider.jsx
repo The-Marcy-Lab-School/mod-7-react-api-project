@@ -1,7 +1,7 @@
 import { handleFetch } from "../utils";
 import NourishContext from "./NourishContext";
 import React from 'react'
-import { useState, useEffect } from "react";
+import { useState} from "react";
 
 const NourishProvider = ({children}) => {
 
