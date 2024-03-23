@@ -7,7 +7,7 @@ const NourishProvider = ({children}) => {
 
     const [categories, setCategory] = useState([])
     const [error, setError] = useState(null)
-  
+    
     useEffect(() => {
         const fetchCategories = async () => {
             const [categoryResponse, error]= await handleFetch('https://www.themealdb.com/api/json/v1/1/categories.php');
