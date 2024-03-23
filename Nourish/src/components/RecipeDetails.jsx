@@ -4,8 +4,6 @@ import { useContext, useEffect, useState } from "react"
 const RecipeDetails = () => {
     const [recipe, setRecipe] = useState([])
 
-    const idMeal = '53042'
-
     useEffect(() => {
         const fetchRecipe = async () => {
             const [data, error] = await handleFetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${idMeal}`)

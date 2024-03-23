@@ -11,6 +11,7 @@ function App () {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/category/:id' element={<Category />}/>
+        {/* <Route path='' element=''/> */}
         <Route path="*" element={<div>Page Not Found</div>} />
       </Routes>
     </>
