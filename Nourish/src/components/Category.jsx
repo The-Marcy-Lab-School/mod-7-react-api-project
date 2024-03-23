@@ -5,12 +5,8 @@ import NourishContext from "../context/NourishContext";
 const Category = () => {
     const { id } = useParams;
     const { categories } = useContext(NourishContext);
-    // console.log(categories)
-    const category = categories.find(category => {
-        console.log(category)
-        console.log(category.idCategory)
-        return category.idCategory == Number(id)
-    });
+
+    const category = categories.find(category => +category.idCategory === Number(id));
 
     if (!categories || categories.length === 0) {
         return <div>Loading...</div>;
@@ -18,7 +14,7 @@ const Category = () => {
     
     return (
         <div>
-            <h1>Here is all your { category } meals</h1>
+            <h1>Here are all your { category } meals</h1>
         </div>
     )
 }
