@@ -169,14 +169,15 @@ body {
     transform: rotate(-5deg);
   }
   to {
-    transform: rotate(5deg);
+    transform: rotate(10deg);
   }
 }
 
 .subtitle {
   font-size: 24px; /* Example font size for the subtitle */
   text-align: center;
-  color: white; /* Example color for the subtitle */
+  color: rgb(156, 88, 189); /* Example color for the subtitle */
+  text-shadow:  4px 4px 4px white;
 }
 
 .home-container {

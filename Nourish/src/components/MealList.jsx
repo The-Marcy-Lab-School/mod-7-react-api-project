@@ -13,7 +13,8 @@ const MealList = ({ meals }) => {
     // const categoryMeals = meals.filter(meal => meal.strCategory === Number(id))
 
     return (
-        <div className='container'>
+        <div className='container'> //*layer the cards in direction right coloum 
+        //*create a swipe through meals effect one card at a time on all meals page
             <div className="card">
             {meals.map(meal => (
                 <div key={meal.idMeal} className='card'>
