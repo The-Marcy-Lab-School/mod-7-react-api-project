@@ -7,13 +7,13 @@ const NavBar = () => {
     const { categories } = useContext(NourishContext);
 
     return (
-        <nav>
-            <ul>
+        <nav className="navbar">
+            <ul className="nav-list">
                 <li>
                     <Link to='/'>Home</Link>
                 </li>
                     <div className="dropdown">
-                        <span>Categories</span>
+                        <span className="category-title">Categories</span>
                         <div className="dropdown-content">
                             {
                                 categories && categories.length > 0 && categories.map((category) => (

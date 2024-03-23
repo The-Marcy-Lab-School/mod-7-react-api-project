@@ -14,7 +14,7 @@ const Category = () => {
     useEffect(() => {
         const fetchMeals = async () => {
             const [data, error] = await handleFetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${categories[id - 1].strCategory}`);
-                // console.log("data:", data.meals)
+                 console.log("data:", data.meals)
                 if (data) setMeals(data.meals)
                 if (error) setError(error.message)
         }
