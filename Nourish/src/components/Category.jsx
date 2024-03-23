@@ -1,16 +1,29 @@
-import { useParams } from "react-router-dom"
-import { useContext } from "react";
-import NourishContext from "../context/NourishContext";
+import React from 'react';
+import { useContext, useState, useEffect } from 'react';
+import NourishContext from '../context/NourishContext';
+import { useParams } from "react-router-dom";
+import MealList from './MealList'
+import { handleFetch } from '../utils';
 
 const Category = () => {
-    const { id } = useParams;
+    const [meals, setMeals] = useState([]);
+    const [error, setError] = useState(null);
+    const { id } = useParams();
     const { categories } = useContext(NourishContext);
-    // console.log(categories)
-    const category = categories.find(category => {
-        console.log(category)
-        console.log(category.idCategory)
-        return category.idCategory == Number(id)
-    });
+
+    useEffect(() => {
+        const fetchMeals = async () => {
+            const [data, error] = await handleFetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${categories[id - 1].strCategory}`);
+                // console.log("data:", data.meals)
+                if (data) setMeals(data.meals)
+                if (error) setError(error.message)
+        }
+        fetchMeals();
+    }, [id]);
+
+    // console.log('meals', meals)
+
+    if (error) return "Can't fetch meals"
 
     if (!categories || categories.length === 0) {
         return <div>Loading...</div>;
@@ -18,7 +31,8 @@ const Category = () => {
     
     return (
         <div>
-            <h1>Here is all your { category } meals</h1>
+            <h1>Here is all your { categories[id - 1].strCategory } meals</h1>
+            <MealList meals={meals} />
         </div>
     )
 }
