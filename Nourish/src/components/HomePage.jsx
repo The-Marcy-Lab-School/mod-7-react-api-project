@@ -2,11 +2,15 @@ import React from 'react'
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>Nourish</h1>
-      <h2>Wellness starts here...</h2>
-    </div>
+    <>
+        <h1 className='title'>Nourish</h1>
+        <h2 className="subtitle">Wellness starts here...</h2>
+    </>
+   
+
+
+   
   )
 }
 
-export default HomePage
+export default HomePage;
