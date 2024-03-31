@@ -21,7 +21,6 @@ const RecipeDetails = () => {
         }
     }
 
-
     useEffect(() => {
         const fetchRecipe = async () => {
             const [data, error] = await handleFetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
@@ -41,13 +40,7 @@ const RecipeDetails = () => {
             <h1>{recipe[0].strMeal}</h1>
             <img src={recipe[0].strMealThumb} alt="meal-pic" />
             <p>{recipe[0].strInstructions}</p>
-            <p>Ingredients:</p>
-            <ul>
-                {
-                    ingredientsParser
-                }
-            </ul>
-            
+            <ul>{ ingredientsParser }</ul>
         </div>
     )
 }
