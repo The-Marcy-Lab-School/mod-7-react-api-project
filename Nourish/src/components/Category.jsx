@@ -31,7 +31,7 @@ const Category = () => {
     
     return (
         <div>
-            <h1 className="categoryPage-title">Here are your all of  { categories[id - 1].strCategory } meals</h1>
+            <h1 className="categoryPage-title">Here are all of your { categories[id - 1].strCategory } meals</h1>
             <MealList meals={meals} />
         </div>
     )

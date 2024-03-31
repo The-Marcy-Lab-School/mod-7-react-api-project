@@ -39,8 +39,8 @@ const RecipeDetails = () => {
     return (
         <div>
             <h1>{recipe[0].strMeal}</h1>
-            <img src={recipe[0].strMealThumb} alt="meal-pic" />
-            <p>{recipe[0].strInstructions}</p>
+            <img id="picture" src={recipe[0].strMealThumb} alt="meal-pic" />
+            <p id="instructions">{recipe[0].strInstructions}</p>
             <p>Ingredients:</p>
             <ul>
                 {
