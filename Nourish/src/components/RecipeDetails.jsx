@@ -9,11 +9,10 @@ const RecipeDetails = () => {
     const ingredientsParser = (recipe) => {
         
         const listElements = []
-        for(let i = 1; i < 20; i++){
+        for (let i = 1; i < 20; i++) {
             recipe[0][`strIngrediant${i}`]
-            if(ingredients = ''){
-                break
-            }
+            if (ingredients = '') break
+            
             listElements.push(
                 <li>
                     {strIngredients[i]}
