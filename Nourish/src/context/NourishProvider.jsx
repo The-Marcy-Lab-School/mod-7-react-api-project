@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { handleFetch } from "../utils";
 import NourishContext from "./NourishContext";
