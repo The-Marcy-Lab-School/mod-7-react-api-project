@@ -26,9 +26,6 @@ const NavBar = () => {
                             }
                         </div>
                     </div>
-                <li>
-                    <Link to='/allmeals'>All Meals</Link>
-                </li>
             </ul>
         </nav>
     )
