@@ -19,6 +19,7 @@ const MealList = ({ meals }) => {
 
     return (
         <div className='container'>
+            
             {
                 meals.map(meal => (
                     <div key={meal.idMeal} onClick={() => handleClick(meal.idMeal)} className='card'>
@@ -29,6 +30,7 @@ const MealList = ({ meals }) => {
                     </div>
                 ))
             }
+          
         </div>
     )
 }
