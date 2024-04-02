@@ -43,27 +43,28 @@ If time permits, the following stretch features will be implemented in order of 
 To ensure that we can complete all core features of the application in 1 week, we will aim to complete tasks according to the following timeline:
 
 **Day 1**
-- Create a GitHub Organization 
-- Create a Scrum Board with tickets
-- Create the project repo with the project proposal in the markdown
+- [ ] Create a GitHub Organization 
+- [ ] Create a Scrum Board with tickets
+- [ ] Create the project repo with the project proposal in the markdown
+- [ ] Create all files and directories needed
 
 **Day 2**
-- Fetch Cat
+- [ ] Fetch the categories
+- [ ] Fetch the list of meals in each category
+- [ ] Fetch the meal data for a single meal
 
 **Day 3** (MVP due by the end of the day)
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+- [ ] Create the category dropdown 
+- [ ] Create meal list for selected category
+- [ ] Create page with instructions for the specified meal
 
 **Day 4**
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+- [ ] Styling and making the website pretty
+- [ ] Implementing first stretch feature
 
 **Day 5**
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+- [ ] Implementing second stretch feature
+- [ ] Implementing third stretch feature
 
 ## Wireframes of each page in your application
 
