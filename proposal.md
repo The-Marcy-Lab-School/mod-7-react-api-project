@@ -4,7 +4,7 @@ Created by Tahj Amie and Dominic Tuzo.
 
 ## 🚀 Mission statement
 
-Our application, Nourish was created for people looking for something to eat. It allows users to select a meal from a 
+Our application, Nourish was created for people looking for something to eat. It allows users to select a meal from a plethora of choices and then provides instructions on how to re-create the meal of their choosing.
 
 ## API & React Router
 
