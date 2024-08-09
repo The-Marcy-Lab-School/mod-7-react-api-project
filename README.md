@@ -82,7 +82,7 @@ Make sure you look over the entire project and think about what will take the mo
 
 Your team will need to create a Github Organization and a scrum board for managing your tasks. Each morning during stand up, you will update your scrum board and assign tasks.
 
-Use this [scrumboard](https://github.com/users/benspector-mls/projects/3/views/1?layout=board) as an example.
+Use this [scrumboard](https://github.com/users/EMarcantonio/projects/1/views/1?layout=board) as an example.
 
 ## Project Presentation
 
