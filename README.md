@@ -107,7 +107,7 @@ Use this [scrumboard](https://github.com/users/EMarcantonio/projects/1/views/1?l
 
 ## Project Presentation
 
-At the end of the project week, your team will present your project to the class in the form of a presentation! The presentation should feature speaking roles by each member of the team and include a short (under 2 minutes) recording of the built application.
+At the end of the project week, your team will present your project to the class in the form of a presentation! The presentation should feature speaking roles by each member of the team and include a short (under 2 minutes) recording of the built application. The entire presentation should last no longer than 5 minutes. 
 
 Use the following [template](https://docs.google.com/presentation/d/1X3OVnZ1EEatqc9lL-3VS8mkGDjeBqfyqBgdGqZgOuEs/edit?usp=sharing) and [example](https://docs.google.com/presentation/d/1zyfnu7PDpf5E3Ff7FIUdqAyvMGiAzdh_06RHAau4nF4/edit#slide=id.g2b32ee03b40_0_140)
 
