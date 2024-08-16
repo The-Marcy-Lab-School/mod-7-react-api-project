@@ -37,6 +37,7 @@ For this project, your team will collectively be on the hook for the following:
 
 * A proposal document
 * GitHub Organization (you only need one repo)
+* High Fidelity Wireframe(figma, Miro, draw.io, photoshop etc...)
 * Scrum Board with Backlog, In Progress, and Done 
 * A React app that meets the technical requirements listed below
 * A presentation slideshow + Walkthrough demo video
