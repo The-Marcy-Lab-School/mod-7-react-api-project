@@ -26,18 +26,17 @@ API endpoint #3 : /v1/public/characters/{characterId}/stories
 [If your API requires an API key, say so here.]
 
 **Example:**
-- API endpoint #1 :https://developer.marvel.com/docs#!/public/getCreatorCollection_get_0
-  - Fetches list of characters
-  - I want to fetch the unique ID of the character, name of the character, thumbnail - representative image for this character
+https://api.artic.edu/api/v1/artworks
+This will fetch an array of artwork objects
+For each artwork, I want the id, title, and image_id
 
-API endpoint #2 :/v1/public/characters/{characterId}/comics
-- Fetches the comics’ cover
-- I would like to fetch the comic by ID and title of the comic while also displaying the thumbnail of the comic
+https://api.artic.edu/api/v1/artworks/{id}
+This will fetch a single artwork object
+I will use the id, title, short_description, medium_display, place_of_origin and image_id
 
-API endpoint #3 : /v1/public/characters/{characterId}/stories
-- Fetches ‘story’ behind the searched character id
-- I would like to fetch the ID, description, and title.
-
+https://api.artic.edu/api/v1/artworks/search?q={query}
+This will fetch a list of artworks that relate to the search query
+For each artwork, I will use the id and title
 
 ## 👩‍💻 MVP User Stories & Frontend Routes
 
