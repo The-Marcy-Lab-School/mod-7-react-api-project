@@ -13,8 +13,8 @@ const MarvelSearch = () => {
 
     return (
         <form onSubmit={handleSearch}>
-            <input type="text" name="query" placeholder="Search for a character" />
-            <button type="submit">Search</button>
+            <input className="inputBar" type="text" name="query" placeholder="Search for a character" />
+            <button className="search-button" type="submit">Search</button>
         </form>
     );
 };

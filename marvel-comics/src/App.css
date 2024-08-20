@@ -5,15 +5,25 @@
   text-align: center;
 }
 
+body {
+  background-color: blanchedalmond;
+}
+
+h1 {
+  border: 4mm ridge rgba(42, 241, 238, 0.6);
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +50,10 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* William and Jahmari's CSS */
+
+.inputBar {
+  margin: 2%;
 }
