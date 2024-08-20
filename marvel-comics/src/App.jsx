@@ -1,7 +1,8 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import { API_KEY, HASH } from './config.js';
-import fetchData from './utils/FetchData';
+import fetchData from './utils/fetchData.js';
+import GifSearch from './components/GifSearch'
 
 function App() {
   const [pokemonList, setPokemonList] = useState([]);
@@ -34,6 +35,7 @@ function App() {
   return (
     <>
       <div className="homepage">
+      <GifSearch setQuery = {setQuery} />
         <h1>Pokémon API</h1>
         <button onClick={() => setQuery('charizard')}>Fetch Charizard</button>
         <div>
