@@ -1,9 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { useState } from 'react';
+import fetchData from './utils/fetchData'
+
+const API = "https://gateway.marvel.com//get/v1/public/characters"
 
 function App() {
+  const [joke, setJoke] = useState();
+  const [error, setError] = useState('');
+
+  // useEffect(() => {
+    const doFetch = async () => {
+      const [data, error] = await fetchData(API);
+      console.log(data);
+      if (data) setJoke(data);
+      if (error) setError(error);
+    }
+    doFetch();
+  // }, [])
 
   return (
     <>

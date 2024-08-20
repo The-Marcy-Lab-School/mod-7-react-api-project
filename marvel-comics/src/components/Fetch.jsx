@@ -1,0 +1,1 @@
+const API = "https://developer.marvel.com/get/v1/public/characters"
