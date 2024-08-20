@@ -1,55 +1,73 @@
-import './App.css';
-import { useState, useEffect } from 'react';
+// src/App.jsx
+import React, { useState, useEffect, createContext, useContext } from 'react';
+import fetchData from './components/Fetch.jsx'; // Adjust the import path as needed
 import { API_KEY, HASH } from './config.js';
-import fetchData from './utils/fetchData.js';
-import GifSearch from './components/GifSearch'
+import MarvelSearch from './components/MarvelSearch'; // Ensure this component is correctly imported
+import './App.css';
 
-function App() {
-  const [pokemonList, setPokemonList] = useState([]);
+// Create the context
+const CharacterContext = createContext();
+
+const App = () => {
+  const [character, setCharacter] = useState(null);
   const [error, setError] = useState('');
-  const [query, setQuery] = useState('pikachu'); // Default query or dynamic value
+  const [query, setQuery] = useState('Doctor Strange'); // Default query
+  const [loading, setLoading] = useState(false); // Add loading state
 
-  const API = `https://pokeapi.co/api/v2/pokemon/${query}/`;
+  const API_URL = `http://gateway.marvel.com/v1/public/characters?ts=1&apikey=${API_KEY}&hash=${HASH}&name=${query}`;
 
+
+  //try-catch- finally structure
   useEffect(() => {
-    const fetchPokemon = async () => {
+    const fetchCharacter = async () => {
+      setLoading(true); // Set loading to true when starting fetch
       try {
-        const response = await fetch(API);
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
+        const data = await fetchData(API_URL);
+        if (data.data.results.length > 0) {
+          setCharacter(data.data.results[0]); // Display the first result
+          setError(''); // Clear any previous errors
+        } else {
+          setCharacter(null); // Clear character if no results found
         }
-        const data = await response.json(); // Parse the response as JSON
-        setPokemonList([data]); // Update state with the fetched Pokémon data
       } catch (error) {
-        setError(error.message); // Update state with any errors encountered during fetching
+        setError(error.message);
+        setCharacter(null); // Ensure character is null on error
+      } finally {
+        setLoading(false); // Set loading to false after fetch completes
       }
     };
 
-    fetchPokemon(); // Call the function to fetch Pokémon data
-  }, [API]); // Dependency array includes API to refetch when it changes
+    fetchCharacter();
+  }, [query]); // Fetch new data when query changes
 
-  useEffect(() => {
-    console.log(pokemonList); // Log to check what's happening
-  }, [pokemonList]);
+  const searchCharacter = (newQuery) => {
+    setQuery(newQuery.trim());
+  };
 
   return (
-    <>
+    <CharacterContext.Provider value={{ character, error, searchCharacter }}>
       <div className="homepage">
-      <GifSearch setQuery = {setQuery} />
-        <h1>Pokémon API</h1>
-        <button onClick={() => setQuery('charizard')}>Fetch Charizard</button>
-        <div>
-          {error && <p className="error">{error}</p>}
-          {pokemonList.length > 0 && (
-            <div>
-              <h2>{pokemonList[0].name}</h2>
-              <img src={pokemonList[0].sprites.front_default} alt={pokemonList[0].name} />
-            </div>
-          )}
-        </div>
+        <h1>Marvel API React</h1>
+        <MarvelSearch /> {/* Use MarvelSearch to handle the search */}
+        {loading && <p>Loading in progress...</p>} {/* Display loading message */}
+        {error && <p className="error">{error}</p>} {/* Render error message if there's an error */}
+        {!loading && !error && !character && <p>No character found</p>} {/* Display if no character is found */}
+        {character && (
+          <div className="character-card">
+            <h2>{character.name}</h2>
+            <img
+              src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
+              alt={character.name}
+            />
+          </div>
+        )}
       </div>
-    </>
+    </CharacterContext.Provider>
   );
-}
+};
+
+// Create a custom hook to use the CharacterContext
+const useCharacter = () => useContext(CharacterContext);
 
 export default App;
+export { useCharacter };
