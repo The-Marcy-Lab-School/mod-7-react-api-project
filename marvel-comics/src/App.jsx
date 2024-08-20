@@ -1,19 +1,21 @@
 import './App.css'
 import { useState } from 'react';
-import fetchData from './utils/fetchData'
+import {API_KEY, HASH} from './config.js';
+import fetchData from './utils/FetchData'
 
-const API = "https://gateway.marvel.com//get/v1/public/characters"
+const API = `https://pokeapi.co/api/v2/pokemon/${value}/`
 
 function App() {
   const [joke, setJoke] = useState();
   const [error, setError] = useState('');
 
-  // useEffect(() => {
+   //useEffect(() => {
     const doFetch = async () => {
       const [data, error] = await fetchData(API);
       console.log(data);
       if (data) setJoke(data);
       if (error) setError(error);
+     // return
     }
     doFetch();
   // }, [])
@@ -21,7 +23,7 @@ function App() {
   return (
     <>
      <div className="hompage">
-      <h1>Marvel Comics</h1>
+      <h1>Pokemon API</h1>
         <button>
           Enter 
         </button>
