@@ -8,19 +8,23 @@ Our application, Marvel Searcher is for anyone who loves comics. It allows users
 
 ## API & React Router
 
-This application will use the [name of API] API. Below are the documentation and specific endpoints we intend to use and the front-end pages that will use them.
+This application will use the Marvel API. Below are the documentation and specific endpoints we intend to use and the front-end pages that will use them.
+
+Link to API documentation: [[https://developer.marvel.com/docs]]
+
 
 - API endpoint #1 :https://developer.marvel.com/docs#!/public/getCreatorCollection_get_0
   - Fetches list of characters
   - I want to fetch the unique ID of the character, name of the character, thumbnail - representative image for this character
 
-API endpoint #2 :/v1/public/characters/{characterId}/comics
--Fetches the comics’ cover
--I would like to fetch the comic by ID and title of the comic while also displaying the thumbnail of the comic
+- API endpoint #2 :/v1/public/characters/{characterId}/comics
+  - Fetches the comics’ cover
+  - I would like to fetch the comic by ID and title of the comic while also displaying the thumbnail of the comic
 
-API endpoint #3 : /v1/public/characters/{characterId}/stories
--Fetchs ‘story’ behind the searched character id
--I would like to fetch the ID, description, and title.
+- API endpoint #3 : /v1/public/characters/{characterId}/stories 
+  - Fetch's ‘story’ behind the searched character id
+  - I would like to fetch the ID, description, and title.
+
 
 
 [If your API requires an API key, say so here.]
@@ -42,13 +46,13 @@ For each artwork, I will use the id and title
 
 * The application will feature the following frontend routes and core features:
 
-* On the /home page, users can…
+- On the /home page, users can…
 Input a value inside the search bar which will fetch characters through their name
 
-* On the /home page, users can…
+- On the /home page, users can…
 View the images of the characters currently searched
 
-* On the /home page, users can…
+- On the /home page, users can…
 Once the character is searched users have the option to click” reveal story” to fetch Story{description}
 
 **Example:**
@@ -61,14 +65,15 @@ Once the character is searched users have the option to click” reveal story”
 
 If time permits, the following stretch features will be implemented in order of priority:
 
-* Users will be able to…
-Keep a stored log of their recent searches cascading from most recent to oldest maybe as a small icon or the names in a box somewhere on the screen.
+- Users will be able to…
+Keep a stored log of their recent searches cascading from most recent to oldest maybe as a small icon or the names in a box somewhere on the screen
 
-* Users will be able to…
-See all instances/characters of relevance to the character's name, multiple boxes showcasing instead of just one.
+- Users will be able to…
+See all instances/characters of relevance to the character's name, multiple boxes showcasing instead of just one
 
-* Users will be able to…
-Users will be able to change the color theme from light mode to dark mode.
+- Users will be able to…
+Users will be able to change the color theme from light mode to dark mode
+
 
 
 **Example:**
