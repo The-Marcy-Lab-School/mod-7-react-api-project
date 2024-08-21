@@ -45,7 +45,7 @@ const App = () => {
   };
 
   return (
-    <CharacterContext.Provider value={{ character, error, searchCharacter }}>
+    <CharacterContext.Provider value={{ character, error, searchCharacter, }}>
       <div className="homepage">
         <h1>Marvel API React</h1>
         <MarvelSearch /> {/* Use MarvelSearch to handle the search */}
@@ -59,6 +59,7 @@ const App = () => {
               src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
               alt={character.name}
             />
+            <h1>{character.text}</h1>
           </div>
         )}
       </div>

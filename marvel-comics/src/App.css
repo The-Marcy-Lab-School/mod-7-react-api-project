@@ -11,6 +11,8 @@ body {
 
 h1 {
   border: 4mm ridge rgba(42, 241, 238, 0.6);
+  padding: 20px;
+  border-radius: 25px;
 }
 
 .logo {
