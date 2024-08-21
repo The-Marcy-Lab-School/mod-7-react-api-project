@@ -1,14 +1,10 @@
 // src/components/CharacterDisplay.jsx
-import React, { useState } from 'react';
+import React from 'react';
 import { useCharacter } from '../App'; // Import the custom hook to access context
+import CharacterDescription from './CharacterDescription';
 
 const CharacterDisplay = () => {
   const { characters } = useCharacter(); // Get the characters from context
-  const [visibleDescription, setVisibleDescription] = useState(null); // State to track which description is visible
-
-  const toggleDescription = (id) => {
-    setVisibleDescription(visibleDescription === id ? null : id);
-  };
 
   return (
     <div className="character-display">
@@ -20,12 +16,7 @@ const CharacterDisplay = () => {
             src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
             alt={character.name}
           />
-          <button onClick={() => toggleDescription(character.id)}>
-            {visibleDescription === character.id ? 'Hide Description' : 'Show Description'}
-          </button>
-          {visibleDescription === character.id && (
-            <p>{character.description || 'No description available'}</p>
-          )}
+          <CharacterDescription description={character.description} />
         </div>
       ))}
     </div>
