@@ -2,7 +2,7 @@
 import React from 'react';
 import { useCharacter } from '../App'; // Import the custom hook to access context
 import CharacterDescription from './CharacterDescription';
-
+////
 const CharacterDisplay = () => {
   const { characters } = useCharacter(); // Get the characters from context
 
