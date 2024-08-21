@@ -1,3 +1,4 @@
+/* General CSS */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -11,8 +12,6 @@ body {
 
 h1 {
   border: 4mm ridge rgba(42, 241, 238, 0.6);
-  padding: 20px;
-  border-radius: 25px;
 }
 
 .logo {
@@ -58,4 +57,33 @@ h1 {
 
 .inputBar {
   margin: 2%;
+  border-radius: 25px;
+  height: 30px;
+  width: 300px;
+}
+
+.title {
+  padding: 20px;
+  border-radius: 25px;
+  width: 750px;
+  color: black;
+}
+
+.character-image {
+  border: solid black 5px;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+/* For placeholder */
+::placeholder {
+  text-align: center; 
+  color: white;
+}
+
+.character-title {
+  color: black;
+}
+p {
+  color: black;
 }

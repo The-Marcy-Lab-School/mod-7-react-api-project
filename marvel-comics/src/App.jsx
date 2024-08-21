@@ -3,7 +3,6 @@ import React, { useState, useEffect, createContext, useContext } from 'react';
 import fetchData from './components/Fetch.jsx'; // Adjust the import path as needed
 import { API_KEY, HASH } from './config.js';
 import MarvelSearch from './components/MarvelSearch'; // Ensure this component is correctly imported
-import CharacterDisplay from './components/CharacterDisplay'; // Import the CharacterDisplay component
 import './App.css';
 
 // Create the context
@@ -23,6 +22,7 @@ const App = () => {
       setLoading(true); // Set loading to true when starting fetch
       try {
         const data = await fetchData(API_URL);
+        console.log(data);
         if (data.data.results.length > 0) {
           setCharacters(data.data.results); // Set the array of characters
           setError(''); // Clear any previous errors
@@ -47,12 +47,21 @@ const App = () => {
   return (
     <CharacterContext.Provider value={{ characters, error, searchCharacter }}>
       <div className="homepage">
-        <h1>Marvel API React</h1>
+        <h1 className="title">Marvel API React</h1>
         <MarvelSearch /> {/* Use MarvelSearch to handle the search */}
         {loading && <p>Loading in progress...</p>} {/* Display loading message */}
         {error && <p className="error">{error}</p>} {/* Render error message if there's an error */}
-        {!loading && !error && characters.length === 0 && <p>No character found</p>} {/* Display if no character is found */}
-        <CharacterDisplay /> {/* Render the CharacterDisplay component */}
+        {!loading && !error && !character && <p>No character found</p>} {/* Display if no character is found */}
+        {character && (
+          <div className="character-card">
+            <h2>{character.name}</h2>
+            <img
+              src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
+              alt={character.name}
+            />
+            <h1>{character.text}</h1>
+          </div>
+        )}
       </div>
     </CharacterContext.Provider>
   );
