@@ -3,41 +3,41 @@ import React, { useState, useEffect, createContext, useContext } from 'react';
 import fetchData from './components/Fetch.jsx'; // Adjust the import path as needed
 import { API_KEY, HASH } from './config.js';
 import MarvelSearch from './components/MarvelSearch'; // Ensure this component is correctly imported
+import CharacterDisplay from './components/CharacterDisplay'; // Import the CharacterDisplay component
 import './App.css';
 
 // Create the context
 const CharacterContext = createContext();
 
 const App = () => {
-  const [character, setCharacter] = useState(null);
+  const [characters, setCharacters] = useState([]); // Change to an array to hold multiple characters
   const [error, setError] = useState('');
-  const [query, setQuery] = useState('Doctor Strange'); // Default query
+  const [query, setQuery] = useState('thor'); // Default query
   const [loading, setLoading] = useState(false); // Add loading state
 
   const API_URL = `http://gateway.marvel.com/v1/public/characters?ts=1&apikey=${API_KEY}&hash=${HASH}&name=${query}`;
 
-
-  //try-catch- finally structure
+  // try-catch-finally structure
   useEffect(() => {
-    const fetchCharacter = async () => {
+    const fetchCharacters = async () => {
       setLoading(true); // Set loading to true when starting fetch
       try {
         const data = await fetchData(API_URL);
         if (data.data.results.length > 0) {
-          setCharacter(data.data.results[0]); // Display the first result
+          setCharacters(data.data.results); // Set the array of characters
           setError(''); // Clear any previous errors
         } else {
-          setCharacter(null); // Clear character if no results found
+          setCharacters([]); // Clear characters if no results found
         }
       } catch (error) {
         setError(error.message);
-        setCharacter(null); // Ensure character is null on error
+        setCharacters([]); // Ensure characters is an empty array on error
       } finally {
         setLoading(false); // Set loading to false after fetch completes
       }
     };
 
-    fetchCharacter();
+    fetchCharacters();
   }, [query]); // Fetch new data when query changes
 
   const searchCharacter = (newQuery) => {
@@ -45,23 +45,14 @@ const App = () => {
   };
 
   return (
-    <CharacterContext.Provider value={{ character, error, searchCharacter, }}>
+    <CharacterContext.Provider value={{ characters, error, searchCharacter }}>
       <div className="homepage">
         <h1>Marvel API React</h1>
         <MarvelSearch /> {/* Use MarvelSearch to handle the search */}
         {loading && <p>Loading in progress...</p>} {/* Display loading message */}
         {error && <p className="error">{error}</p>} {/* Render error message if there's an error */}
-        {!loading && !error && !character && <p>No character found</p>} {/* Display if no character is found */}
-        {character && (
-          <div className="character-card">
-            <h2>{character.name}</h2>
-            <img
-              src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
-              alt={character.name}
-            />
-            <h1>{character.text}</h1>
-          </div>
-        )}
+        {!loading && !error && characters.length === 0 && <p>No character found</p>} {/* Display if no character is found */}
+        <CharacterDisplay /> {/* Render the CharacterDisplay component */}
       </div>
     </CharacterContext.Provider>
   );
