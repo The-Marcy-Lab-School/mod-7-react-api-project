@@ -3,6 +3,7 @@ import React, { useState, useEffect, createContext, useContext } from 'react';
 import fetchData from './components/Fetch.jsx'; // Adjust the import path as needed
 import { API_KEY, HASH } from './config.js';
 import MarvelSearch from './components/MarvelSearch'; // Ensure this component is correctly imported
+import CharacterDescription from './components/MarvelMoreInfo';
 import './App.css';
 
 // Create the context
@@ -23,6 +24,7 @@ const App = () => {
       setLoading(true); // Set loading to true when starting fetch
       try {
         const data = await fetchData(API_URL);
+        console.log(data);
         if (data.data.results.length > 0) {
           setCharacter(data.data.results[0]); // Display the first result
           setError(''); // Clear any previous errors
@@ -47,19 +49,20 @@ const App = () => {
   return (
     <CharacterContext.Provider value={{ character, error, searchCharacter, }}>
       <div className="homepage">
-        <h1>Marvel API React</h1>
+        <h1 className="title">Marvel API React</h1>
         <MarvelSearch /> {/* Use MarvelSearch to handle the search */}
         {loading && <p>Loading in progress...</p>} {/* Display loading message */}
         {error && <p className="error">{error}</p>} {/* Render error message if there's an error */}
         {!loading && !error && !character && <p>No character found</p>} {/* Display if no character is found */}
         {character && (
           <div className="character-card">
-            <h2>{character.name}</h2>
-            <img
+            <h2 className="character-title">{character.name}</h2>
+            <img 
+              className="character-image"
               src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
               alt={character.name}
             />
-            <h1>{character.text}</h1>
+           <CharacterDescription />
           </div>
         )}
       </div>
