@@ -47,7 +47,7 @@ const App = () => {
   return (
     <CharacterContext.Provider value={{ characters, error, searchCharacter }}>
       <div className="homepage">
-        <h1>Marvel API React</h1>
+        <h1 className="character-title">Marvel Gallery</h1>
         <MarvelSearch /> {/* Use MarvelSearch to handle the search */}
         {loading && <p>Loading in progress...</p>} {/* Display loading message */}
         {error && <p className="error">{error}</p>} {/* Render error message if there's an error */}
