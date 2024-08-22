@@ -6,6 +6,7 @@
   text-align: center;
 }
 
+/* Color Scheme */
 body {
   background-color: #817E9F;
 }
@@ -114,4 +115,9 @@ p {
 
 .character-display {
   width: 900px;
+}
+
+.hide-description {
+  color: white;
+  background-color: black;
 }
