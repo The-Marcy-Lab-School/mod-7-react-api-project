@@ -8,6 +8,7 @@
 
 /* Color Scheme */
 body {
+
   background-color: #817E9F;
   width: 100%;
 }
@@ -58,6 +59,7 @@ h1 {
 #footer .content p {
   margin-bottom: 0;
 }
+
 /* William and Jahmari's CSS */
 
 .inputBar {
@@ -85,7 +87,7 @@ h1 {
 
 /* For placeholder */
 ::placeholder {
-  text-align: center; 
+  text-align: center;
   color: white;
 }
 
@@ -100,7 +102,7 @@ p {
   font-size: 20px;
 
 }
-/* Description */
+/* Descritpion */
 .descriptionSize {
   font-size: 30px;
   line-height: 1.5;
@@ -108,6 +110,7 @@ p {
   border-radius: 25px;
   padding: 10px;
 }
+
 /* Search Button */
 .search-button {
   color: white;

@@ -5,9 +5,9 @@ import { useCharacter } from '../App'; // Adjust the import path as needed
 const MarvelSearch = () => {
     const { searchCharacter } = useCharacter();
 
-    const handleSearch = (event) => {
-        event.preventDefault();
-        const query = event.target.elements.query.value;
+    const handleSearch = (e) => {
+        e.preventDefault();
+        const query = e.target.elements.query.value;
         searchCharacter(query);
     };
 
