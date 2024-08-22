@@ -86,4 +86,12 @@ h1 {
 }
 p {
   color: black;
+  font-size: 20px;
+
+}
+
+.descriptionSize {
+  font-size: 30px;
+  line-height: 1.5;
+  border-style: dotted;
 }

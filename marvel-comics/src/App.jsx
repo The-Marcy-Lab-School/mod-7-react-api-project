@@ -22,6 +22,7 @@ const App = () => {
       setLoading(true); // Set loading to true when starting fetch
       try {
         const data = await fetchData(API_URL);
+        console.log(data)
         if (data.data.results.length > 0) {
           setCharacters(data.data.results); // Set the array of characters
           setError(''); // Clear any previous errors
