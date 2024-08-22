@@ -7,11 +7,11 @@
 }
 
 body {
-  background-color: blanchedalmond;
+  background-color: #817E9F;
 }
 
 h1 {
-  border: 4mm ridge rgba(42, 241, 238, 0.6);
+  border: 4mm ridge #444071;
 }
 
 .logo {
@@ -57,6 +57,7 @@ h1 {
 
 .inputBar {
   margin: 2%;
+  border: solid white;
   border-radius: 25px;
   height: 30px;
   width: 300px;
@@ -85,19 +86,23 @@ h1 {
 
 .character-title {
   color: black;
+  padding: 15px;
 }
+
 p {
   color: black;
   font-size: 20px;
 
 }
-
+/* Descritpion */
 .descriptionSize {
   font-size: 30px;
   line-height: 1.5;
-  border-style: dotted;
+  border: 5px solid black;
+  border-radius: 25px;
+  padding: 10px;
 }
-
+/* Search Button */
 .search-button {
   color: white;
   background-color: black;
@@ -105,4 +110,8 @@ p {
 
 .marvel-character-title {
   color: black;
+}
+
+.character-display {
+  width: 900px;
 }
