@@ -9,6 +9,7 @@
 /* Color Scheme */
 body {
   background-color: #817E9F;
+  width: 100%;
 }
 
 h1 {
@@ -91,6 +92,7 @@ h1 {
 .character-title {
   color: black;
   padding: 15px;
+  border-radius: 25px;
 }
 
 p {
@@ -98,7 +100,7 @@ p {
   font-size: 20px;
 
 }
-/* Descritpion */
+/* Description */
 .descriptionSize {
   font-size: 30px;
   line-height: 1.5;
@@ -111,16 +113,30 @@ p {
   color: white;
   background-color: black;
 }
-
+/* Title above the character's photo */
 .marvel-character-title {
   color: black;
+  font-size: 50px;
+  text-align: center;
 }
-
+/* Photo of Character */
 .character-display {
   width: 900px;
 }
-
+/* Description Button */
 .hide-description {
   color: white;
   background-color: black;
+}
+.nav-bar {
+  position: relative;
+  width: 100%;
+  background-color: white;
+}
+ul {
+  padding: 0;
+}
+li {
+  position: relative;
+  list-style-type: none;
 }
