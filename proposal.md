@@ -85,13 +85,13 @@ Users will be able to change the color theme from light mode to dark mode
 To ensure that we can complete all core features of the application in 1 week, we will aim to complete tasks according to the following timeline:
 
 **Day 1**
-- [ ] Fetch the API
-- [ ] H1 title, Search bar form, Buttons
-- [ ] Styling the Home page with the idea of our wireframe in mind.
+- [ ] Fetch the API 8/20
+- [ ] H1 title, Search bar form, Buttons 8/20
+- [ ] Styling the Home page with the idea of our wireframe in mind. 8/20
 
 **Day 2**
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+- [ ] Show description of Marvel character 8/21
+- [ ] Rendering multiple images 8/21
 - [ ] Ticket description and due date
 
 **Day 3** (MVP due by the end of the day)
@@ -113,8 +113,13 @@ To ensure that we can complete all core features of the application in 1 week, w
 
 Below, you can find wireframes for our project. Each wireframe shows a different page of our application as well as the key components of the application. Details such as specific text values or images are intentionally not included:
 
+Wireframe link: [[https://excalidraw.com/#room=6d31299855f32f63e583,PwAAhY0fk6EM2WYSJSwzBA]]
+
 [Wireframe for page 1]
 
-![alt text](<Marvel Comic Proposal.png>)
+![alt text](<Main Page.png>)
+
 
 [Wireframe for page 2]
+
+![alt text](About.png)
