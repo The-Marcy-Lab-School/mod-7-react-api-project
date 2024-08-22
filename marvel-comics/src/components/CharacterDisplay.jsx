@@ -13,7 +13,7 @@ const CharacterDisplay = () => {
           <h2>{character.name}</h2>
           <img
             className="character-image"
-            src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
+            src={`${character.thumbnail.path}.${character.thumbnail.extension}`} //ensures type is jpg,etc
             alt={character.name}
           />
           <CharacterDescription description={character.description} />

@@ -58,4 +58,12 @@ h1 {
 
 .inputBar {
   margin: 2%;
+  font-size: 20px;
+
+}
+
+.descriptionSize {
+  font-size: 30px;
+  line-height: 1.5;
+  border-style: dotted;
 }
