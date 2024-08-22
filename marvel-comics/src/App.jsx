@@ -1,8 +1,8 @@
-import React, { useState, useEffect, createContext, useContext } from 'react';
-import fetchData from './components/Fetch.jsx'; // Adjust the import path as needed
+import { useState, useEffect, createContext, useContext } from 'react';
+import fetchData from './components/Fetch.jsx';
 import { API_KEY, HASH } from './config.js';
-import MarvelSearch from './components/MarvelSearch'; // Ensure this component is correctly imported
-import CharacterDisplay from './components/CharacterDisplay'; // Import the CharacterDisplay component
+import MarvelSearch from './components/MarvelSearch';
+import CharacterDisplay from './components/CharacterDisplay';
 import './App.css';
 
 // Create the context
@@ -11,7 +11,7 @@ const CharacterContext = createContext();
 const App = () => {
   const [characters, setCharacters] = useState([]); // Change to an array to hold multiple characters
   const [error, setError] = useState('');
-  const [query, setQuery] = useState('thor'); // Default query
+  const [query, setQuery] = useState('doctor strange'); // Default query
   const [loading, setLoading] = useState(false); // Add loading state
 
   const API_URL = `http://gateway.marvel.com/v1/public/characters?ts=1&apikey=${API_KEY}&hash=${HASH}&name=${query}`;
@@ -43,7 +43,7 @@ const App = () => {
   const searchCharacter = (newQuery) => {
     setQuery(newQuery.trim());
   };
-
+  //
   return (
     <CharacterContext.Provider value={{ characters, error, searchCharacter }}>
       <div className="homepage">
