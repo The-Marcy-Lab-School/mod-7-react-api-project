@@ -10,7 +10,7 @@ const CharacterDisplay = () => {
     <div className="character-display">
       {characters.map((character) => (
         <div className="character-card" key={character.id}>
-          <h2>{character.name}</h2>
+          <h2 className="marvel-character-title">{character.name}</h2>
           <img
             className="character-image"
             src={`${character.thumbnail.path}.${character.thumbnail.extension}`} //ensures type is jpg,etc

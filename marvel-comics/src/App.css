@@ -75,8 +75,6 @@ h1 {
   border: solid black 5px;
   border-radius: 25px;
   padding: 5px;
-  height: 1000px;
-  width: 800px;
 }
 
 /* For placeholder */
@@ -103,4 +101,8 @@ p {
 .search-button {
   color: white;
   background-color: black;
+}
+
+.marvel-character-title {
+  color: black;
 }
