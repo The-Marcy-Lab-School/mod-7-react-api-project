@@ -62,4 +62,4 @@ const App = () => {
 const useCharacter = () => useContext(CharacterContext);
 
 export default App;
-export { useCharacter };
+export { useCharacter }

@@ -60,6 +60,7 @@ h1 {
   border-radius: 25px;
   height: 30px;
   width: 300px;
+  background-color: black;
 }
 
 .title {
@@ -73,6 +74,8 @@ h1 {
   border: solid black 5px;
   border-radius: 25px;
   padding: 5px;
+  height: 800px;
+  width: 600px;
 }
 
 /* For placeholder */
