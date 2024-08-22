@@ -10,7 +10,7 @@ const CharacterDescription = ({ description }) => {
 
   return (
     <div>
-      <button className="hide-descritption" onClick={toggleDescription}>
+      <button className="hide-description" onClick={toggleDescription}>
         {isVisible ? 'Hide Description' : 'Show Description'}
       </button>
       {isVisible && (
