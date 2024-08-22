@@ -44,6 +44,8 @@ For each artwork, I will use the id and title
 
 ## 👩‍💻 MVP User Stories & Frontend Routes
 
+The color scheme for this project is #817E9F
+
 * The application will feature the following frontend routes and core features:
 
 - On the /home page, users can…
@@ -85,19 +87,17 @@ Users will be able to change the color theme from light mode to dark mode
 To ensure that we can complete all core features of the application in 1 week, we will aim to complete tasks according to the following timeline:
 
 **Day 1**
-- [ ] Fetch the API 8/20
-- [ ] H1 title, Search bar form, Buttons 8/20
-- [ ] Styling the Home page with the idea of our wireframe in mind. 8/20
+- [x] Fetch the API 8/20
+- [x] H1 title, Search bar form, Buttons 8/20
+- [x] Styling the Home page with the idea of our wireframe in mind. 8/20
 
 **Day 2**
-- [ ] Show description of Marvel character 8/21
-- [ ] Rendering multiple images 8/21
-- [ ] Ticket description and due date
+- [x] Show description of Marvel character 8/21
+- [ ] (Strecth)Rendering multiple images 8/21
 
 **Day 3** (MVP due by the end of the day)
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
-- [ ] Ticket description and due date
+- [ ] Build NavBar 8/22
+- [ ] Style About Page 8/22
 
 **Day 4**
 - [ ] Ticket description and due date
