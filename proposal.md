@@ -119,7 +119,6 @@ Wireframe link: [[https://excalidraw.com/#room=6d31299855f32f63e583,PwAAhY0fk6EM
 
 ![alt text](<Main Page.png>)
 
-
 [Wireframe for page 2]
 
 ![alt text](About.png)
