@@ -2,7 +2,7 @@ import React, { useState, useEffect, createContext, useContext } from 'react';
 import { API_KEY, HASH } from './config.js';
 import fetchData from './components/Fetch.jsx'; // Adjust the import path as needed
 //////
-import { BrowserRouter } from 'react-router-dom'; 
+import { BrowserRouter } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
 ///////
 import About from './pages/About';
@@ -52,23 +52,25 @@ const App = () => {
   };
 
   return (
-  <BrowserRouter>
-    <CharacterContext.Provider value={{ characters, error, searchCharacter }}>
-      <div className="homepage">
-      <NavBar />
-        {/* Using a nav bar in react */}
-        <Routes >
-          <Route path ="/pages/about" element={<About />}> </Route>
-        </Routes>
-        <h1 className="character-title">Marvel Gallery</h1>
+    <BrowserRouter>
+      <CharacterContext.Provider value={{ characters, error, searchCharacter }}>
+        <div className="homepage">
+          <NavBar />
+          {/* Using a nav bar in react */}
+          <Routes >
+            <Route path="/pages/about" element={<About />}> </Route>
+            <Route path="/pages/Marvel Gallery" element={<MarvelGallery />} />
+          </Routes>
+
+          <h1 className="character-title">Marvel Gallery</h1>
           <MarvelSearch /> {/* Use MarvelSearch to handle the search */}
           {loading && <p>Loading in progress...</p>} {/* Display loading message */}
           {error && <p className="error">{error}</p>} {/* Render error message if there's an error */}
           {!loading && !error && characters.length === 0 && <p>No character found</p>} {/* Display if no character is found */}
           <CharacterDisplay /> {/* Render the CharacterDisplay component */}
-      </div>
-    </CharacterContext.Provider>
-  </BrowserRouter>
+        </div>
+      </CharacterContext.Provider>
+    </BrowserRouter>
   );
 };
 
