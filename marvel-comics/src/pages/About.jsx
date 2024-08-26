@@ -6,6 +6,6 @@ const About = () => {
         search for your favorite characters. Upon user input our website will fetch stunning thumbnails, 
         character names, character descriptions all in one place. 
         Explore the heroes, villains, and everything in between—right from the heart of the Marvel cosmos!</p>
-    </>;
+    </>
 }
 export default About;
