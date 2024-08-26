@@ -51,7 +51,6 @@ const MarvelSearch = () => {
                 <input className="inputBar" type="text" name="query" placeholder="Search for a character" />
                 <button className="search-button" type="submit">Search</button>
             </form>
-            <h1 className="character-title">Marvel Gallery</h1>
             {loading && <p>Loading in progress...</p>} {/* Display loading message */}
             {error && <p className="error">{error}</p>} {/* Render error message if there's an error */}
             {!loading && !error && characters.length === 0 && <p>No character found</p>} {/* Display if no character is found */}

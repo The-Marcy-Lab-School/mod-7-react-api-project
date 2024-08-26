@@ -1,13 +1,12 @@
 import { useState, useEffect, createContext, useContext } from 'react';
 import { API_KEY, HASH } from './config.js';
-import fetchData from './components/Fetch.jsx'; // Adjust the import path as needed
+import fetchData from './components/Fetch.jsx';
 //////
 import { BrowserRouter } from 'react-router-dom';
 import { Route, Routes } from 'react-router-dom';
 ///////
 import About from './pages/About';
 import NavBar from './components/NavBar';
-import MarvelGallery from './components/Marvel Gallery.jsx';
 import './App.css';
 ///////
 import MarvelSearch from './components/MarvelSearch'; // Ensure this component is correctly imported
@@ -26,10 +25,10 @@ const App = () => {
         <div className="homepage">
           <NavBar />
           {/* Using a nav bar in react */}
+          {/* "/" is home page */}
           <Routes >
             <Route path="/pages/about" element={<About />}> </Route>
             <Route path="/" element={<MarvelSearch />}> </Route>
-            {/* <Route path="/pages/MarvelGallery" element={<MarvelGallery />} /> */}
           </Routes>
         </div>
       </CharacterContext.Provider>
