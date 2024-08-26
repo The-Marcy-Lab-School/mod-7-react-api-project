@@ -8,8 +8,7 @@
 
 /* Color Scheme */
 body {
-
-  background-color: #817E9F;
+  background-color: #d0bfff;
   width: 100%;
 }
 
@@ -102,6 +101,7 @@ p {
   font-size: 20px;
 
 }
+
 /* Descritpion */
 .descriptionSize {
   font-size: 30px;
@@ -116,29 +116,35 @@ p {
   color: white;
   background-color: black;
 }
+
 /* Title above the character's photo */
 .marvel-character-title {
   color: black;
   font-size: 50px;
   text-align: center;
 }
+
 /* Photo of Character */
 .character-display {
   width: 900px;
 }
+
 /* Description Button */
 .hide-description {
   color: white;
   background-color: black;
 }
+
 .nav-bar {
   position: relative;
   width: 100%;
   background-color: white;
 }
+
 ul {
   padding: 0;
 }
+
 li {
   position: relative;
   list-style-type: none;
