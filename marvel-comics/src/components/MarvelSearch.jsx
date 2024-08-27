@@ -13,10 +13,8 @@ const MarvelSearch = () => {
     const { error, characters, setError, setCharacters } = useCharacter();
     const handleSearch = (e) => {
         e.preventDefault();
-        const query = e.target.elements.query.value.trim();
-        if (newQuery) {
-            setQuery(newQuery);
-        }
+        const newQuery = e.target.elements.query.value.trim();
+        setQuery(newQuery);
     };
 
     const API_URL = `http://gateway.marvel.com/v1/public/characters?ts=1&apikey=${API_KEY}&hash=${HASH}&name=${query}`;
