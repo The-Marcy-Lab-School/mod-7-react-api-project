@@ -22,7 +22,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <CharacterContext.Provider value={{ characters, error, setCharacters, setError }}>
-        <div className="homepage">
+        <div className="main-content">
           <NavBar />
           {/* Using a nav bar in react */}
           {/* "/" is home page */}
