@@ -7,12 +7,12 @@ import fetchData from '../components/Fetch.jsx'; // Ensure fetchData is properly
 
 // Example list of character IDs (Replace these with actual IDs you want to use)
 const CHARACTER_IDS = [
-  // 1009351, // Hulk
-  // 1009220, // Captain America
-  // 1009282, // Doctor Strange
-  // 1009268, //dead pool
-  // 1009189, //black widow
-  // 1009351, //thor
+  1009351, // Hulk
+  1009220, // Captain America
+  1009282, // Doctor Strange
+  1009268, //dead pool
+  1009189, //black widow
+  1009351, //thor
   1009610, //spider man
 
 ];
@@ -56,7 +56,7 @@ const MarvelGallery = () => {
     fetchComics();
 
     // timer to fetch comics periodically
-    const intervalId = setInterval(fetchComics, 5000); // 5000 ms = 5 seconds
+    const intervalId = setInterval(fetchComics, 15000); // 15000 ms = 15 seconds
 
     // Cleanup the timer on component unmount
     return () => clearInterval(intervalId);
