@@ -35,6 +35,7 @@ const App = () => {
             </Routes>
           </div>
         </ComicContext.Provider>
+
       </CharacterContext.Provider>
     </BrowserRouter>
   );
