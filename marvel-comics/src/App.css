@@ -1,11 +1,14 @@
 /* General CSS */
 #root {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
-
+html {
+  width: 100%;
+}
+/* ----- Basic Class CSS ---- */
 /* Color Scheme */
 body {
   background-color: #d0bfff;
@@ -14,6 +17,22 @@ body {
 
 h1 {
   border: 4mm ridge #444071;
+}
+
+p {
+  color: black;
+  font-size: 20px;
+
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  position: relative;
+  list-style-type: none;
+  display: inline;
 }
 
 .logo {
@@ -59,7 +78,14 @@ h1 {
   margin-bottom: 0;
 }
 
-/* William and Jahmari's CSS */
+/* ---- William and Jahmari's CSS ---- */
+.main-content {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
 
 .inputBar {
   margin: 2%;
@@ -71,11 +97,11 @@ h1 {
   background-color: black;
 }
 
-.title {
-  padding: 20px;
-  border-radius: 25px;
-  width: 750px;
-  color: black;
+/* Search Button */
+.search-button {
+  margin-top: 30px;
+  color: white;
+  background-color: black;
 }
 
 .character-image {
@@ -96,12 +122,6 @@ h1 {
   border-radius: 25px;
 }
 
-p {
-  color: black;
-  font-size: 20px;
-
-}
-
 /* Descritpion */
 .descriptionSize {
   font-size: 30px;
@@ -109,12 +129,6 @@ p {
   border: 5px solid black;
   border-radius: 25px;
   padding: 10px;
-}
-
-/* Search Button */
-.search-button {
-  color: white;
-  background-color: black;
 }
 
 /* Title above the character's photo */
@@ -135,17 +149,51 @@ p {
   background-color: black;
 }
 
+.navBarContainer {
+ display: flex;
+}
+
+/* Nav Bar Container */
 .nav-bar {
-  position: relative;
   width: 100%;
+  border: solid 5px black;
+  border-radius: 25px;
   background-color: white;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  box-shadow: 0px 2px 3px rgb(0 0 0 / 10%);
 }
 
-ul {
-  padding: 0;
-}
-
-li {
+.nav-link-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   position: relative;
-  list-style-type: none;
+  height: 100px;
+  width: 100%;
 }
+
+.nav-link {
+  width: 200px;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+/* About Page CSS */
+
+.about-title {
+  margin: 0 auto;
+  padding: 2rem;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.site-description {
+  /*
+ width: 100%;
+ height: 100%;
+ */
+}
+
