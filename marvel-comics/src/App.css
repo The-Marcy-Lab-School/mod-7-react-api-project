@@ -3,6 +3,7 @@
   width: 100%;
   margin: 0 auto;
   padding: 2rem;
+
   text-align: center;
 }
 html {
@@ -13,10 +14,13 @@ html {
 body {
   background-color: #d0bfff;
   width: 100%;
+  padding: 40px;
+  display: flex;
 }
 
 h1 {
   border: 4mm ridge #444071;
+
 }
 
 p {
@@ -135,10 +139,17 @@ form {
   padding: 10px;
 }
 
+/* Search Button */
+.search-button {
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+
 /* Title above the character's photo */
 .marvel-character-title {
   color: black;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -158,6 +169,72 @@ form {
 }
 
 /* Nav Bar Container */
+.nav-bar {
+  background-color: #333;
+  padding: 10px 0px;
+  /* Padding for spacing */
+  position: fixed;
+  /* Fix position to the top */
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* pushes nav to the very top and corners */
+  z-index: 1000;
+  /* Ensure it stays on top */
+}
+
+ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+li {
+  position: relative;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+/* comic display images */
+/* div */
+.comic-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+  text-align: center;
+}
+
+/* card box itself */
+.comic-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  max-width: 200px;
+  /* Fixed height */
+  background-color: black;
+}
+
+/* title  */
+.marvel-comic-title {
+  font-size: 15px;
+  margin: 8px 0;
+  color: white;
+
+}
+
+/* images within cards*/
+.comic-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
 .nav-bar {
   width: 100%;
   border: solid 5px black;

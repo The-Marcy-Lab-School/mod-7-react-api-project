@@ -13,8 +13,8 @@ const MarvelSearch = () => {
     const { error, characters, setError, setCharacters } = useCharacter();
     const handleSearch = (e) => {
         e.preventDefault();
-        const query = e.target.elements.query.value;
-        setQuery(query.trim());
+        const newQuery = e.target.elements.query.value.trim();
+        setQuery(newQuery);
     };
 
     const API_URL = `http://gateway.marvel.com/v1/public/characters?ts=1&apikey=${API_KEY}&hash=${HASH}&name=${query}`;
@@ -36,6 +36,7 @@ const MarvelSearch = () => {
                 setError(error.message);
                 setCharacters([]); // Ensure characters is an empty array on error
             } finally {
+                console.log('loading complete')
                 setLoading(false); // Set loading to false after fetch completes
             }
         };
