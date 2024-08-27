@@ -22,9 +22,9 @@ const App = () => {
   return (
     <BrowserRouter>
       <CharacterContext.Provider value={{ characters, error, setCharacters, setError }}>
-        <ComicContext.Provider value={{ comics, setComics, setError }}>
 
-          <div className="homepage">
+        <ComicContext.Provider value={{ comics, setComics, setError }}>
+          <div className="main-content">
             <NavBar />
             {/* Using a nav bar in react */}
             {/* "/" is home page */}
