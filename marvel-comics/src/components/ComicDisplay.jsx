@@ -11,7 +11,7 @@ const ComicDisplay = () => {
     <div className="comic-display">
       {comics.map((comic) => (
         <div className="comic-card" key={comic.id}>
-          <h2 className="marvel-comic-title">{comic.name}</h2>
+          <h2 className="marvel-comic-title">{comic.title}</h2>
           <img
             className="comic-image"
             src={`${comic.thumbnail.path}.${comic.thumbnail.extension}`} //extension ensures type is jpg,etc avoiding errors
