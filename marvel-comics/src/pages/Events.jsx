@@ -9,10 +9,9 @@ import { useParams } from 'react-router-dom';
 
 
 const Events = () => {
-  const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const { events, setEvents, setError: setContextError } = useEvent(); // through context grab EventDisplay
-  const { characterId } = useParams()
+  const { characterId } = useParams() //mekhi
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -47,9 +46,7 @@ const Events = () => {
 
   return (
     <>
-      {loading && <p>Loading in progress... </p>}
-      {error && <p className="error">{error}</p>}
-      {!loading && !error && events && <p>No events found</p>}
+      <p>{characterId}</p>
       <EventDisplay />
     </>
   );
