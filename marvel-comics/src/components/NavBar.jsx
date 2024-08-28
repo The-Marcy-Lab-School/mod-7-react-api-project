@@ -8,7 +8,7 @@ const NavBar = () => {
         <ul className="nav-link-container">
           <li className="nav-link"><Link to='/'>Home</Link></li>
           <li className="nav-link"><Link to='/pages/about'>About</Link></li>
-          <li className="nav-link"><Link to='/pages/MarvelGallery'>MarvelGallery</Link></li>
+          <li className="nav-link"><Link to='/pages/MarvelGallery'>Marvel Gallery</Link></li>
         </ul>
       </nav>
   )
