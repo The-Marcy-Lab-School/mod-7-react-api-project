@@ -4,6 +4,7 @@ import CharacterDisplay from './CharacterDisplay'
 import { useState, useEffect, createContext, useContext } from 'react';
 import { API_KEY, HASH } from '../config.js';
 import fetchData from '../components/Fetch.jsx';
+// import EventDisplay from './EventDisplay.jsx'
 
 const MarvelSearch = () => {
     const [query, setQuery] = useState('thor'); // Default query
@@ -18,7 +19,6 @@ const MarvelSearch = () => {
     };
 
     const API_URL = `http://gateway.marvel.com/v1/public/characters?ts=1&apikey=${API_KEY}&hash=${HASH}&name=${query}`;
-
     // try-catch-finally structure
     useEffect(() => {
         const fetchCharacters = async () => {
@@ -56,6 +56,10 @@ const MarvelSearch = () => {
             {error && <p className="error">{error}</p>} {/* Render error message if there's an error */}
             {!loading && !error && characters.length === 0 && <p>No character found</p>} {/* Display if no character is found */}
             <CharacterDisplay /> {/* Render the CharacterDisplay component */}
+            {/* <EventDisplay /> */}
+            {/* //fetch handle
+            usefefect */}
+
         </>
     );
 };

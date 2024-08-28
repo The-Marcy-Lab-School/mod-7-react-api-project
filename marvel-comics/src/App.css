@@ -3,13 +3,15 @@
   width: 100%;
   margin: 0 auto;
   padding: 2rem;
- /* Nav-bar length */
+  /* Nav-bar length */
   margin-top: 50px;
   text-align: center;
 }
+
 html {
   width: 100%;
 }
+
 /* ----- Basic Class CSS ---- */
 /* Color Scheme */
 body {
@@ -92,6 +94,7 @@ li {
   align-items: center;
   width: 100%;
 }
+
 form {
   margin-top: 30px;
   position: relative;
@@ -167,7 +170,7 @@ form {
 }
 
 .navBarContainer {
- display: flex;
+  display: flex;
 }
 
 /* Nav Bar Container */
@@ -264,6 +267,7 @@ li {
   flex-direction: column;
   align-items: center;
 }
+
 .about-title {
   margin: 0 auto;
   padding: 2rem;
@@ -272,9 +276,14 @@ li {
 }
 
 .site-description {
- background-color: white;
- width: 800px;
- padding: 35px;
- border-radius: 25px;
+  background-color: white;
+  width: 800px;
+  padding: 35px;
+  border-radius: 25px;
 }
 
+
+.event-image {
+  height: 40px;
+  width: 40px;
+}
