@@ -3,11 +3,14 @@ const About = () => {
     <>
     <div className="about-piece"> {/* style={{ backgroundImage: `url()`}}> */}
     <h1 className="about-title">About</h1>
-        <p className="site-description"> Dive into the Marvel Universe with ease using our API searcher app. 
-            Powered by the Marvel API, Marvel Museum lets you effortlessly 
-            search for your favorite characters. Upon user input our website will fetch stunning thumbnails, 
-            character names, character descriptions all in one place. 
-            Explore the heroes, villains, and everything in between—right from the heart of the Marvel cosmos!
+        <p className="site-description"> 
+            Dive into the vast Marvel Universe 
+            with our interactive platform that brings your favorite 
+            heroes and villains to life. Powered by the Marvel API, 
+            our site offers a dynamic, up-to-date display of Marvel characters, 
+            featuring detailed profiles, iconic images, and fascinating backstories. 
+            Whether you're a die-hard Marvel fan or new to the universe, 
+            explore and discover characters from across the Marvel multiverse, all in one place. 
         </p>
     </div>
     </>
