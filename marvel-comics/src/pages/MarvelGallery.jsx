@@ -59,7 +59,7 @@ const MarvelGallery = () => {
     fetchComics();
 
     // timer to fetch comics periodically
-    const intervalId = setInterval(fetchComics, 5000); // 5000 ms = 5 seconds
+    const intervalId = setInterval(fetchComics, 15000); // 5000 ms = 5 seconds
 
     // Cleanup the timer on component unmount
     return () => clearInterval(intervalId);

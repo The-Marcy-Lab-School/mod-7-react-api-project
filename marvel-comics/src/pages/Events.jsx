@@ -38,12 +38,11 @@ const Events = () => {
     };
 
     fetchEvents();
-  }, []); // Empty dependency array means this effect runs once on component mount
-
+  }, [characterId]); // Empty dependency array means this effect runs once on component mount
+  // ^^^^ it was empty[]
   return (
     <>
       {loading && <p>Loading in progress... </p>}
-      <p>This Character's ID in the Marvel API Universe : {characterId}</p>
 
       {error && <p className="error">{error}</p>}
       {!loading && !error && events && <p>No events found</p>}

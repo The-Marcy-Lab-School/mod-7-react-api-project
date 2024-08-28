@@ -283,7 +283,17 @@ li {
 }
 
 
-.event-image {
-  height: 40px;
-  width: 40px;
+.event-display {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+/* 
+.event-image {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+} */
