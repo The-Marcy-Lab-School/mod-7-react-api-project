@@ -282,18 +282,35 @@ li {
   border-radius: 25px;
 }
 
-
 .event-display {
-  height: 100px;
-  width: 100px;
   display: flex;
   flex-wrap: wrap;
+  /* Allow items to wrap onto the next line */
+  justify-content: flex-start;
+  /* Align items to the start of the container */
+  align-items: flex-start;
+  /* Align items to the top of the row */
+  border-radius: 4px;
+  /* Adjust the border radius */
+  padding: 8px;
+  /* Padding for the container */
+  gap: 8px;
+  /* Space between items */
+  max-width: 100%;
+  /* Allow the container to use full width */
+  justify-content: center;
 }
 
-/* 
 .event-image {
-  height: 100px;
-  width: 100px;
-  display: flex;
-  flex-wrap: wrap;
-} */
+  width: 270px;
+  /* Set a smaller width for items */
+  height: 270px;
+  /* Set a smaller height for items */
+  border-radius: 4px;
+  /* Match the border radius */
+  padding: 2px;
+  /* Reduce padding inside the items */
+  background-color: #333;
+  /* Example background color */
+
+}
