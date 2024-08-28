@@ -9,9 +9,10 @@ import { useParams } from 'react-router-dom';
 
 
 const Events = () => {
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const { events, setEvents, setError: setContextError } = useEvent(); // through context grab EventDisplay
-  const { characterId } = useParams() //mekhi
+  const { characterId } = useParams()
 
   useEffect(() => {
     const fetchEvents = async () => {
@@ -20,11 +21,7 @@ const Events = () => {
         // Fetch comics for the selected character
         const eventsURL = `http://gateway.marvel.com/v1/public/characters/${characterId}/events?ts=1&apikey=${API_KEY}&hash=${HASH}`;
         const eventsResponse = await fetchData(eventsURL);
-
-        console.log(eventsResponse)
         const eventsData = eventsResponse.data.results;
-
-        console.log(eventsData.length > 0)
 
         if (eventsData.length > 0) {
           setEvents(eventsData);
@@ -43,10 +40,13 @@ const Events = () => {
     fetchEvents();
   }, []); // Empty dependency array means this effect runs once on component mount
 
-
   return (
     <>
-      <p>{characterId}</p>
+      {loading && <p>Loading in progress... </p>}
+      <p>This Character's ID in the Marvel API Universe : {characterId}</p>
+
+      {error && <p className="error">{error}</p>}
+      {!loading && !error && events && <p>No events found</p>}
       <EventDisplay />
     </>
   );
