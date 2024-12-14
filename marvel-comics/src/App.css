@@ -1,0 +1,278 @@
+/* General CSS */
+#root {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+html {
+  width: 100%;
+}
+/* ----- Basic Class CSS ---- */
+/* Color Scheme */
+body {
+  background-color: #d0bfff;
+  width: 100%;
+  padding: 40px;
+  display: flex;
+  padding: 0px;
+}
+
+h1 {
+  border: 4mm ridge #444071;
+
+}
+
+p {
+  color: black;
+  font-size: 20px;
+
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  position: relative;
+  list-style-type: none;
+  display: inline;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+#footer .content p {
+  margin-bottom: 0;
+}
+
+/* ---- William and Jahmari's CSS ---- */
+.main-content {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+form {
+  margin-top: 40px;
+  position: relative;
+  display: flex;
+}
+
+.inputBar {
+  margin: 2%;
+  border: solid white;
+  border-radius: 30px;
+  height: 30px;
+  width: 300px;
+  color: white;
+  background-color: black;
+}
+
+/* Search Button */
+.search-button {
+  color: white;
+  background-color: black;
+}
+
+.character-image {
+  border: solid black 5px;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+/* For placeholder */
+::placeholder {
+  text-align: center;
+  color: white;
+}
+
+.character-title {
+  color: black;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+/* Descritpion */
+.descriptionSize {
+  font-size: 30px;
+  line-height: 1.5;
+  border: 5px solid black;
+  border-radius: 25px;
+  padding: 10px;
+}
+
+/* Search Button */
+.search-button {
+  color: white;
+  background-color: black;
+  border-color: white;
+}
+
+/* Title above the character's photo */
+.marvel-character-title {
+  color: black;
+  font-size: 40px;
+  text-align: center;
+}
+
+/* Photo of Character */
+.character-display {
+  width: 900px;
+}
+
+/* Description Button */
+.hide-description {
+  color: white;
+  background-color: black;
+}
+
+.navBarContainer {
+ display: flex;
+}
+
+/* Nav Bar Container */
+.nav-bar {
+  background-color: #333;
+  padding: 10px 0px;
+  /* Padding for spacing */
+  position: fixed;
+  /* Fix position to the top */
+  width: 100%;
+  top: 0;
+  left: 0;
+  /* pushes nav to the very top and corners */
+  z-index: 1000;
+  /* Ensure it stays on top */
+  width: 100%;
+  box-shadow: 0px 2px 3px rgb(0 0 0 / 10%);
+}
+
+ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+}
+
+li {
+  position: relative;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+/* comic display images */
+/* div */
+.comic-display {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px;
+  text-align: center;
+  justify-content: center;
+}
+
+/* card box itself */
+.comic-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 8px;
+  max-width: 200px;
+  /* Fixed height */
+  background-color: black;
+}
+
+/* title  */
+.marvel-comic-title {
+  font-size: 15px;
+  margin: 8px 0;
+  color: white;
+
+}
+
+/* images within cards*/
+.comic-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.nav-link-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  height: 50px;
+  width: 100%;
+  color: black;
+}
+
+.nav-link {
+  width: 200px;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+/* About Page CSS */
+.about-piece {
+  display: flex;
+  width: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.about-title {
+  margin: 0 auto;
+  padding: 2rem;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.site-description {
+ background-color: white;
+ width: 800px;
+ padding: 35px;
+ border-radius: 25px;
+}
+
