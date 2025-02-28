@@ -37,14 +37,14 @@ Hello everyone, it's been a whirlwind, but believe it or not, you know more than
 
 For this project, your team will collectively be on the hook for the following:
 
-[] A proposal document
-[] GitHub Organization (you only need one repo)
-[] High Fidelity Wireframe(figma, Miro, draw.io, photoshop etc...)
-[] Scrum Board with Backlog, In Progress, and Done 
-[] A React app that meets the technical requirements listed below
-[] A presentation slideshow + Walkthrough demo video
-[] A reflection on your use of Agile methodologies
-[] A deployed project link(optional)
+- A proposal document
+- GitHub Organization (you only need one repo)
+- High Fidelity Wireframe(figma, Miro, draw.io, photoshop etc...)
+- Scrum Board with Backlog, In Progress, and Done 
+- A React app that meets the technical requirements listed below
+- A presentation slideshow + Walkthrough demo video
+- A reflection on your use of Agile methodologies
+- A deployed project link(optional)
 
 ## Roles
 
