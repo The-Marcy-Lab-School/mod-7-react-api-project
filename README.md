@@ -133,10 +133,10 @@ See the [Agile Methodology Reflection document](./agile-methodology-reflection.m
 - [ ] Used Vite for this project
 - [ ] Used React
 - [ ] Used React Router for client side routing
-- [ ] Used Context at least once
 - [ ] Made a fetch to get multiple resources
 - [ ] Made a fetch to get a single, specific resource
 - [ ] Made a third fetch for whatever you want
+- [ ] Use Context at least once (set up a dark mode)
 - [ ] **Bonus: Were able to get it deployed in a functional state**
 
 ### React Fundamentals (8)
@@ -150,7 +150,6 @@ See the [Agile Methodology Reflection document](./agile-methodology-reflection.m
 - [ ] At no point did you ever use any vanilla DOM JS methods
 
 ### State Management (10)
-- [ ] A Context is created to manage global state
 - [ ] The `useContext` hook is used at least once
 - [ ] Used the `useEffect` hook at least 2 times
   - [ ] 1st check box
@@ -160,7 +159,10 @@ See the [Agile Methodology Reflection document](./agile-methodology-reflection.m
   - [ ] 2nd check box
   - [ ] 3rd check box
 - [ ] Lifted state up out of a component at least once
-  - That is a fancy way of saying that you had the state of a component and then passed down the getter and setter functions for the hook to a child component. You've seen us do this!
+     - That is a fancy way of saying that you had the state of a component and then passed down the getter and setter functions for the hook to a child component. You've seen us do this!
+- [ ] A Context is created to manage global state
+ 
+     
 
 ### React Router (3)
 - [ ] Had at least 2 different pages in the application
